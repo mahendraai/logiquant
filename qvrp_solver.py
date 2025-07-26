@@ -11,7 +11,7 @@ from qiskit.utils import algorithm_globals
 # Load customer data
 locations = pd.read_csv('data/customer_locations.csv')
 
-# Compute distance matrix
+# Compute distance matrix (Haversine or Euclidean for lat/long)
 def euclidean(p1, p2):
     return ((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)**0.5
 
